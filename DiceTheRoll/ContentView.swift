@@ -8,14 +8,41 @@
 import SwiftUI
 
 struct ContentView: View {
+    @State private var diceNumber = 2
     var body: some View {
-        VStack {
-            Image(systemName: "globe")
-                .imageScale(.large)
-                .foregroundColor(.accentColor)
-            Text("Hello, world!")
+        ZStack {
+            Color.orange
+                .ignoresSafeArea()
+            VStack {
+                Spacer()
+                Text("Roll me!")
+                    .font(.largeTitle)
+                    .foregroundColor(.white)
+                ZStack {
+                    Rectangle()
+                        .fill(.red)
+                        .frame(width: 100, height: 100)
+                        .cornerRadius(10)
+                        
+                    Text(String(diceNumber))
+                        .foregroundColor(.white)
+                        .font(.largeTitle)
+                }
+                Button("ROLL") {
+                    var number = Int.random(in: 1..<7)
+                    withAnimation {
+                        diceNumber = number
+                    }
+                }
+                .padding()
+                .background(.cyan)
+                .foregroundColor(.white)
+                .clipShape(Capsule())
+                
+                Spacer()
+            }
+            
         }
-        .padding()
     }
 }
 
