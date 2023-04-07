@@ -11,6 +11,8 @@
 		4F745BA329E0237A008A9FBA /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F745BA229E0237A008A9FBA /* ContentView.swift */; };
 		4F745BA529E0237B008A9FBA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4F745BA429E0237B008A9FBA /* Assets.xcassets */; };
 		4F745BA929E0237B008A9FBA /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4F745BA829E0237B008A9FBA /* Preview Assets.xcassets */; };
+		4F745BB029E02F6A008A9FBA /* Roll.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F745BAF29E02F6A008A9FBA /* Roll.swift */; };
+		4F745BB229E02FA8008A9FBA /* RollHistory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F745BB129E02FA8008A9FBA /* RollHistory.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -20,6 +22,8 @@
 		4F745BA429E0237B008A9FBA /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		4F745BA629E0237B008A9FBA /* DiceTheRoll.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = DiceTheRoll.entitlements; sourceTree = "<group>"; };
 		4F745BA829E0237B008A9FBA /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		4F745BAF29E02F6A008A9FBA /* Roll.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Roll.swift; sourceTree = "<group>"; };
+		4F745BB129E02FA8008A9FBA /* RollHistory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RollHistory.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,6 +58,8 @@
 			children = (
 				4F745BA029E0237A008A9FBA /* DiceTheRollApp.swift */,
 				4F745BA229E0237A008A9FBA /* ContentView.swift */,
+				4F745BAF29E02F6A008A9FBA /* Roll.swift */,
+				4F745BB129E02FA8008A9FBA /* RollHistory.swift */,
 				4F745BA429E0237B008A9FBA /* Assets.xcassets */,
 				4F745BA629E0237B008A9FBA /* DiceTheRoll.entitlements */,
 				4F745BA729E0237B008A9FBA /* Preview Content */,
@@ -141,6 +147,8 @@
 			files = (
 				4F745BA329E0237A008A9FBA /* ContentView.swift in Sources */,
 				4F745BA129E0237A008A9FBA /* DiceTheRollApp.swift in Sources */,
+				4F745BB029E02F6A008A9FBA /* Roll.swift in Sources */,
+				4F745BB229E02FA8008A9FBA /* RollHistory.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
