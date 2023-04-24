@@ -8,7 +8,7 @@
 import SwiftUI
 
 struct ContentView: View {
-    @State private var dices = [Roll]()
+    @State private var dices = DataManager.loadData()
     @State private var diceNumber = 2
     @State private var isShowingHistory = false
     var body: some View {
@@ -42,7 +42,7 @@ struct ContentView: View {
                         }
                         let dice = Roll(diceRoll: diceNumber)
                         dices.append(dice)
-                        save()
+                        DataManager.saveData(dices)
                     }
                     .padding()
                     .background(Color(CGColor(red: 0.9, green: 0.3, blue: 0.4, alpha: 1)))
@@ -68,16 +68,6 @@ struct ContentView: View {
                 RollHistory(dices: dices)
             }
         }
-    }
-    func save() {
-        let url = getDocumentsDirectory().appendingPathComponent("roll.json")
-        if let data = try? JSONEncoder().encode(dices) {
-            try? data.write(to: url)
-        }
-    }
-    func getDocumentsDirectory() -> URL {
-        let paths = FileManager.default.urls(for: .documentDirectory, in: .userDomainMask)
-        return paths[0]
     }
 }
 
